@@ -8,9 +8,7 @@ router.use(bodyParser.json())
 router.use(bodyParser.urlencoded({ extended: true }));
 require("dotenv").config();
 
-
 const User = require('../models/user');
-
 
 exports.postSignup=async (req,res,next)=>{
     try{

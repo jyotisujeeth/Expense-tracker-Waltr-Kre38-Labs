@@ -21,10 +21,6 @@ router.use(bodyParser.json())
 router.use(bodyParser.urlencoded({ extended: true }));
 
 
-
-
-
-
 exports.updatePassword=(req, res) => {
 
     try {

@@ -14,8 +14,6 @@ const sequelize=require('../util/database');
 
 router.use(bodyParser.json())
 
-
-
 function uploadToS3(data,filename){
     const BUCKET_NAME=process.env.BUCKET_NAME
     const IAM_USER_KEY=process.env.IAM_USER_KEY

@@ -8,7 +8,7 @@ function password(e) {
     console.log(passwordDetails)
     axios.post('http://localhost:3000/password/forgotpassword',passwordDetails).then(response => {
             console.log(response.data)
-            alert("Reset link is sucessfully sent to the registered email")
+            alert("Reset link is successfully sent to the registered email")
     }).catch(err => {
         console.log(JSON.stringify(err))
         document.body.innerHTML += `<div style="color:red;">${err.message} <div>`;

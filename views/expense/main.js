@@ -14,10 +14,6 @@ function onSubmit(e){
 
     var hdgdg=document.getElementById('category')
     var category=hdgdg.options[hdgdg.selectedIndex].text;
-
-
-
-
     let obj={
       amount,
       Description,

@@ -18,4 +18,4 @@ function login(e) {
         alert("Email Does Not Exist")
         document.body.innerHTML += `<div style="color:red;">${err.message} <div>`;
     })
-}
+};

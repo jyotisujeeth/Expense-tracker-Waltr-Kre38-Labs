@@ -7,11 +7,9 @@ const router = express.Router();
 const userAuth=require('../middleware/auth');
 const Expense = require('../models/expense');
 
-
 const bodyParser = require('body-parser');
 router.use(bodyParser.json())
 router.use(bodyParser.urlencoded({ extended: true }));
-
 
 router.get('/download',userAuth.authenticate, adminController.download)
 
